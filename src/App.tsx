@@ -2,54 +2,60 @@ import './App.css';
 import React, { Component } from 'react';
 import Objeto from './componentes/objeto';
 import imagen_logo from './imagenes/logo-fundación.png'; 
-import imagen_hacha from './imagenes/bombero-hacha.png';
-import imagen_traje from './imagenes/bombero-traje.png';
-import imagen_casco from './imagenes/bombero-casco.png';
+import imagen_cubo from './imagenes/bombero-cubo 1.png'
+import imagen_esclavina from './imagenes/bombero-esclavina 1.png'
 import imagen_casco_2 from './imagenes/bombero-casco-2.png';
+import imagen_extintor from './imagenes/bombero-extintor 1.png';
+
+
+
+
 
 function App ()   {
-  return (
+  return ( 
     <div className="App">
         <div className=' contenedor-titulo'>
-        
-            <h1>Fundación Cultural y Deportiva de Bomberos de Chile (FCDBCH)</h1> 
-            
-            <h2> Museo virtual<img className='imagen-logo-fundacion' src= {imagen_logo} alt='imagen-logo' /> </h2>
+          <h1>Fundación Cultural y Deportiva de Bomberos de Chile (FCDBCH)</h1>   
+          <h2> Museo virtual<img className='imagen-logo-fundacion' src= {imagen_logo} alt='imagen-logo' /> </h2>
             
         </div>
-     <div className='contenedor-principal'>
-        <Objeto 
-            image= {imagen_traje}
-            nombre = 'Uniforme Bombero'
-            localidad = 'Región del Maule'
-            uso = 'Vestuario'
-          />
+            <div className='contenedor-principal'>
+                <Objeto 
+                  imagen= {imagen_cubo}
+                  nombre = 'Cubo'
+                  cuerpo_bomberos = 'Cuerpo de Bomberos de Achao'
+                  tipologia = 'Herramientas y equipo'
+                  siglo='XXI'
+                />
 
-        <Objeto
-          image= {imagen_casco}
-          nombre = 'Casco de Bombero'
-          localidad = 'Región metropolitana'
-          uso = 'Vestuario'
-        />
+                <Objeto
+                  imagen= {imagen_esclavina}
+                  nombre = 'Esclavina'
+                  cuerpo_bomberos = 'Cuerpo de Bomberos de Ancud '
+                  tipologia = 'Textil y vestuario'
+                  siglo='XXI'
+                />
 
-        <Objeto
-          image= {imagen_hacha}
-          nombre = 'Hacha de Bombero'
-          localidad = 'Región de Valparaíso'
-          uso = 'Herramienta'
-        />
+                <Objeto
+                  imagen= {imagen_extintor}
+                  nombre = 'Extintor'
+                  cuerpo_bomberos = 'Cuerpo de Bomberos de Coinco'
+                  tipologia = 'Herramientas y equipo'
+                  siglo='XX'
+                />
 
-        <Objeto
-          image= {imagen_casco_2}
-          nombre = 'Casco de Bombero'
-          localidad = 'Región de Los Lagos'
-          uso = 'Vestuario'
-        />
+                <Objeto
+                  imagen= {imagen_casco_2}
+                  nombre = 'Casco '
+                  cuerpo_bomberos= 'Cuerpo de Bomberos de Coinco'
+                  tipologia = 'Textil y vestuario'
+                  siglo='XIX'
+                />
 
-
-        </div>
       </div>
+  </div>
   );
+ 
 }
 
 export default App;
