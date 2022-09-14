@@ -1,7 +1,9 @@
-import './App.css';
+//import './App.css';
 import React, { Component } from 'react';
 import Objeto from './componentes/objeto';
-import imagen_logo from './imagenes/logo-fundación.png'; 
+import imagen_logo_fundacion from './imagenes/logo-fundación.png'; 
+import imagen_logo_bomberos from './imagenes/logo-bomberos.png'; 
+
 import imagen_cubo from './imagenes/bombero-cubo 1.png'
 import imagen_esclavina from './imagenes/bombero-esclavina 1.png'
 import imagen_casco_2 from './imagenes/bombero-casco-2.png';
@@ -15,10 +17,12 @@ function App ()   {
   return ( 
     <div className="App">
         <div className=' contenedor-titulo'>
+          <img className='imagen-logo-bomberos' src= {imagen_logo_bomberos} alt='imagen-logo-bomberos' /> 
+          <img className='imagen-logo-fundacion' src= {imagen_logo_fundacion} alt='imagen-logo-fundacion' /> 
           <h1>Fundación Cultural y Deportiva de Bomberos de Chile (FCDBCH)</h1>   
-          <h2> Museo virtual<img className='imagen-logo-fundacion' src= {imagen_logo} alt='imagen-logo' /> </h2>
-            
+          <h2> Museo virtual</h2>
         </div>
+        
             <div className='contenedor-principal'>
                 <Objeto 
                   imagen= {imagen_cubo}
